@@ -1,0 +1,57 @@
+// https://dotnetfiddle.net/el3ZSF
+#gcc unit-test.c s21_decimal.c s21_decimal_long.c -o unit-test -lcheck -lm -lpthread
+
+using System;
+using System.Collections.Generic;
+using System.Text.RegularExpressions;
+using System.Linq;
+using System.Data;
+
+
+public class Program
+{
+	public static void Main()
+	{
+
+		decimal[] input_array = {1, 0.0001M, -1, -0.0001M, 281470681743360M, 28147068174.3360M, -281470681743360, -28147068174.3360M}; //0.0000M};
+//int[] array3 = { 1, 2, 3, 4, 5, 6 };
+
+
+		//decimal dividend = Decimal.One;
+	//	decimal divisor =  0.0000000000000000000000000001M;
+		// The following displays 0.9999999999999999999999999999 to the console
+
+
+
+
+	for(int i = 0; i < 8; i++) {
+			for(int j = 0; j < 8; j++) {
+//
+	//		int i = 0;
+	//		int j = 8;
+
+				//	Console.WriteLine(input_array[i]);
+			//	Console.WriteLine(input_array[j]); (i ==0 && j == 12)
+				if (false) {
+						Console.WriteLine("error");
+				} else {
+//					Console.WriteLine(input_array[i]);
+//					Console.WriteLine(input_array[j]);
+					Console.WriteLine(input_array[i] <= input_array[j]);
+				}
+				//Console.WriteLine("\n");
+			}
+
+		}
+		// Single digit rounding
+		//Console.WriteLine("2058.536 yields " + Math.Round((decimal)2058.536,2)); // yields "2058.54"
+		//Console.WriteLine("2058.568 yields " + Math.Round((decimal)2058.568,2)); // yields "2058.57"
+		//Console.WriteLine("2058.531 yields " + Math.Round((decimal)2058.531,2)); // yields "2058.53"
+		//Console.WriteLine("2058.595 yields " + Math.Round((decimal)2058.595,2)); // yields "2058.60"
+
+
+	}
+
+}
+
+
